@@ -10,24 +10,59 @@
 		2D72BF992A88891800ABA3D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72BF982A88891800ABA3D8 /* AppDelegate.swift */; };
 		2D72BF9B2A88891800ABA3D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72BF9A2A88891800ABA3D8 /* SceneDelegate.swift */; };
 		2D72BF9D2A88891800ABA3D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72BF9C2A88891800ABA3D8 /* ViewController.swift */; };
-		2D72BFA02A88891800ABA3D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D72BF9E2A88891800ABA3D8 /* Main.storyboard */; };
 		2D72BFA22A88891900ABA3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D72BFA12A88891900ABA3D8 /* Assets.xcassets */; };
 		2D72BFA52A88891900ABA3D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D72BFA32A88891900ABA3D8 /* LaunchScreen.storyboard */; };
+		2D72BFB62A88918C00ABA3D8 /* TestbedMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72BFB52A88918C00ABA3D8 /* TestbedMacOS.swift */; };
+		2D72BFB72A88918C00ABA3D8 /* TestbedMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72BFB52A88918C00ABA3D8 /* TestbedMacOS.swift */; };
+		2D72BFB92A88919C00ABA3D8 /* TestbedMacOSImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D72BFB82A88919C00ABA3D8 /* TestbedMacOSImplementation.swift */; };
+		2D72BFBE2A88935A00ABA3D8 /* TestbedMacOS.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2D72BFB02A88915C00ABA3D8 /* TestbedMacOS.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D72BFBA2A8891AE00ABA3D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D72BF8D2A88891800ABA3D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D72BFAF2A88915C00ABA3D8;
+			remoteInfo = TestbedMacOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D72BFBD2A88934100ABA3D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2D72BFBE2A88935A00ABA3D8 /* TestbedMacOS.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D72BF952A88891800ABA3D8 /* Testbed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testbed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D72BF982A88891800ABA3D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D72BF9A2A88891800ABA3D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2D72BF9C2A88891800ABA3D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D72BF9F2A88891800ABA3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D72BFA12A88891900ABA3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D72BFA42A88891900ABA3D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D72BFA62A88891900ABA3D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D72BFB02A88915C00ABA3D8 /* TestbedMacOS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestbedMacOS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D72BFB52A88918C00ABA3D8 /* TestbedMacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestbedMacOS.swift; sourceTree = "<group>"; };
+		2D72BFB82A88919C00ABA3D8 /* TestbedMacOSImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestbedMacOSImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2D72BF922A88891800ABA3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D72BFAD2A88915C00ABA3D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2D72BF972A88891800ABA3D8 /* Testbed */,
+				2D72BFB42A88916800ABA3D8 /* TestbedMacOS */,
 				2D72BF962A88891800ABA3D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2D72BF952A88891800ABA3D8 /* Testbed.app */,
+				2D72BFB02A88915C00ABA3D8 /* TestbedMacOS.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +96,20 @@
 				2D72BF982A88891800ABA3D8 /* AppDelegate.swift */,
 				2D72BF9A2A88891800ABA3D8 /* SceneDelegate.swift */,
 				2D72BF9C2A88891800ABA3D8 /* ViewController.swift */,
-				2D72BF9E2A88891800ABA3D8 /* Main.storyboard */,
 				2D72BFA12A88891900ABA3D8 /* Assets.xcassets */,
 				2D72BFA32A88891900ABA3D8 /* LaunchScreen.storyboard */,
 				2D72BFA62A88891900ABA3D8 /* Info.plist */,
 			);
 			path = Testbed;
+			sourceTree = "<group>";
+		};
+		2D72BFB42A88916800ABA3D8 /* TestbedMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D72BFB52A88918C00ABA3D8 /* TestbedMacOS.swift */,
+				2D72BFB82A88919C00ABA3D8 /* TestbedMacOSImplementation.swift */,
+			);
+			path = TestbedMacOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +122,34 @@
 				2D72BF912A88891800ABA3D8 /* Sources */,
 				2D72BF922A88891800ABA3D8 /* Frameworks */,
 				2D72BF932A88891800ABA3D8 /* Resources */,
+				2D72BFBD2A88934100ABA3D8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2D72BFBB2A8891AE00ABA3D8 /* PBXTargetDependency */,
 			);
 			name = Testbed;
 			productName = Testbed;
 			productReference = 2D72BF952A88891800ABA3D8 /* Testbed.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2D72BFAF2A88915C00ABA3D8 /* TestbedMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D72BFB12A88915C00ABA3D8 /* Build configuration list for PBXNativeTarget "TestbedMacOS" */;
+			buildPhases = (
+				2D72BFAC2A88915C00ABA3D8 /* Sources */,
+				2D72BFAD2A88915C00ABA3D8 /* Frameworks */,
+				2D72BFAE2A88915C00ABA3D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestbedMacOS;
+			productName = TestbedMacOS;
+			productReference = 2D72BFB02A88915C00ABA3D8 /* TestbedMacOS.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +163,10 @@
 				TargetAttributes = {
 					2D72BF942A88891800ABA3D8 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					2D72BFAF2A88915C00ABA3D8 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -116,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				2D72BF942A88891800ABA3D8 /* Testbed */,
+				2D72BFAF2A88915C00ABA3D8 /* TestbedMacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +196,13 @@
 			files = (
 				2D72BFA52A88891900ABA3D8 /* LaunchScreen.storyboard in Resources */,
 				2D72BFA22A88891900ABA3D8 /* Assets.xcassets in Resources */,
-				2D72BFA02A88891800ABA3D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D72BFAE2A88915C00ABA3D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,20 +216,30 @@
 				2D72BF9D2A88891800ABA3D8 /* ViewController.swift in Sources */,
 				2D72BF992A88891800ABA3D8 /* AppDelegate.swift in Sources */,
 				2D72BF9B2A88891800ABA3D8 /* SceneDelegate.swift in Sources */,
+				2D72BFB62A88918C00ABA3D8 /* TestbedMacOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D72BFAC2A88915C00ABA3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D72BFB92A88919C00ABA3D8 /* TestbedMacOSImplementation.swift in Sources */,
+				2D72BFB72A88918C00ABA3D8 /* TestbedMacOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		2D72BF9E2A88891800ABA3D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D72BF9F2A88891800ABA3D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		2D72BFBB2A8891AE00ABA3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D72BFAF2A88915C00ABA3D8 /* TestbedMacOS */;
+			targetProxy = 2D72BFBA2A8891AE00ABA3D8 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		2D72BFA32A88891900ABA3D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +377,6 @@
 				INFOPLIST_FILE = Testbed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,9 +386,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kaipi.Testbed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 6;
 			};
 			name = Debug;
 		};
@@ -320,7 +407,6 @@
 				INFOPLIST_FILE = Testbed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,9 +416,61 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kaipi.Testbed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 6;
+			};
+			name = Release;
+		};
+		2D72BFB22A88915C00ABA3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472XD5HP6E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_MODULE_NAME).CopilotMacImplementation";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kaipi.TestbedMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2D72BFB32A88915C00ABA3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 472XD5HP6E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = "$(PRODUCT_MODULE_NAME).CopilotMacImplementation";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kaipi.TestbedMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -353,6 +491,15 @@
 			buildConfigurations = (
 				2D72BFAA2A88891900ABA3D8 /* Debug */,
 				2D72BFAB2A88891900ABA3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D72BFB12A88915C00ABA3D8 /* Build configuration list for PBXNativeTarget "TestbedMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D72BFB22A88915C00ABA3D8 /* Debug */,
+				2D72BFB32A88915C00ABA3D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

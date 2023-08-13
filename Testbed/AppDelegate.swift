@@ -1,36 +1,44 @@
-//
-//  AppDelegate.swift
-//  Testbed
-//
-//  Created by Sergio Campama on 12-08-23.
-//
-
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+  private var testbedMacOS: TestbedMacOS!
 
+  func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    UserDefaults.standard.set(false, forKey: "NSQuitAlwaysKeepsWindows")
 
+    let bundleFileName = "TestbedMacOS.bundle"
+    guard let bundleURL = Bundle.main.builtInPlugInsURL?.appendingPathComponent(bundleFileName),
+          let bundle = Bundle(url: bundleURL),
+          let bundleClass = bundle.principalClass as? TestbedMacOS.Type
+    else { fatalError("could not find testbed mac bundle") }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+    testbedMacOS = bundleClass.init()
 
-    // MARK: UISceneSession Lifecycle
+    return true
+  }
 
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
+  func application(
+    _ application: UIApplication,
+    configurationForConnecting connectingSceneSession: UISceneSession,
+    options: UIScene.ConnectionOptions
+  ) -> UISceneConfiguration {
+    return UISceneConfiguration(
+      name: "Default",
+      sessionRole: connectingSceneSession.role
+    )
+  }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
+  override func buildMenu(with builder: UIMenuBuilder) {
+    super.buildMenu(with: builder)
 
-
+    builder.remove(menu: .file)
+    builder.remove(menu: .edit)
+    builder.remove(menu: .help)
+    builder.remove(menu: .format)
+  }
 }
 
